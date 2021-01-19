@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетплейс каталог</title>
+</head>
+
+<body>
+
+    <!-- SVG Sprite -->
+    <svg style="display: none;">
+        <symbol id="comparsion" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M315,91H195c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15S323.284,91,315,91z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M315,151H195c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15S323.284,151,315,151z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M315,211H75c-8.284,0-15,6.716-15,15s6.716,15,15,15h240c8.284,0,15-6.716,15-15S323.284,211,315,211z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M260.622,271H75c-8.284,0-15,6.716-15,15s6.716,15,15,15h185.622c8.284,0,15-6.716,15-15S268.906,271,260.622,271z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M391,271V45c0-24.872-21.096-45-46-45H134.998c-3.803,0-7.715,1.504-10.648,4.438l-120,121C1.593,128.217,0,132.082,0,136
+                        v331c0,24.813,20.187,45,45,45c31.646,0,42.154,0,42.109,0c46.003,0,136.525,0,303.891,0c66.233,0,121-54.534,121-121
+                        C512,324.832,457.72,271,391,271z M120,51.427V121H51.002L120,51.427z M45,482c-8.271,0-15-6.729-15-15V151h105
+                        c8.284,0,15-6.716,15-15V30h195c8.523,0,16,7.009,16,15v229.735c-31.838,8.084-58.657,28.725-74.757,56.265H75
+                        c-8.284,0-15,6.716-15,15s6.716,15,15,15h198.828c-2.498,9.592-3.828,19.645-3.828,30H75c-8.284,0-15,6.716-15,15s6.716,15,15,15
+                        h198.805c6.063,23.457,19.172,44.599,37.882,61H45z M391,482c-49.327,0-91-41.673-91-91c0-49.626,40.822-90,91-90
+                        c50.178,0,91,40.374,91,90C482,440.327,440.327,482,391,482z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M447.694,365.482c-5.808-5.906-15.306-5.985-21.213-0.176l-50.566,49.738l-20.484-19.823
+                        c-5.953-5.761-15.449-5.605-21.21,0.348s-5.605,15.449,0.348,21.21l31,30c5.847,5.659,15.144,5.625,20.95-0.085l61-60
+                        C453.425,380.885,453.503,371.388,447.694,365.482z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="favorits" viewBox="0 -28 512.001 512">
+            <path
+                d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187
+             0-42.070313 14.425781-80.882813 40.617188-109.292969
+              26.503906-28.746094 62.871093-44.578125
+               102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 
+               12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 
+               9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 
+               50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 
+               102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 
+               109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187
+                37.398437-75.53125 75.355469-127.105468 119.308594-17.625 
+                15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 
+                4.789062-12.503906 7.429687-19.789062 
+                7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 
+                22.855469-32.675781 54.449219-32.675781 88.964844 0 
+                36.417968 13.535157 68.988281 43.882813 105.605468 
+                29.332031 35.394532 72.960937 72.574219 123.476562 
+                115.625l.09375.078126c17.660156 15.050781 37.679688 
+                32.113281 58.515625 50.332031 20.960938-18.253907 
+                41.011719-35.34375 58.707031-50.417969 50.511719-43.050781
+                 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 
+                 43.878907-69.1875 43.878907-105.605468 
+                 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 
+                 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 
+                9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 32 32">
+            <g>
+                <path
+                    d="m18.727 10.657h1.46v-2.544c-.251-.035-1.118-.113-2.127-.113-2.106
+                0-3.548 1.325-3.548 
+                3.759v2.241h-2.324v2.844h2.324v7.156l2.849.001v-7.156h2.23l.354-2.844h-2.585v-1.959c.001-.822.222-1.385 1.367-1.385z" />
+            </g>
+        </symbol>
+
+        <symbol id="youtube" viewBox="0 -77 512.00213 512">
+            <g>
+                <path
+                    d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312
+             39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0" />
+                <path fill="#fff" d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" />
+            </g>
+        </symbol>
+        <symbol id="whatsapp" viewBox="0 0 512 512">
+            <g>
+                <path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104
+	l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" />
+                <path style="fill:#FAFAFA;" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264
+	C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304
+	c6.176-6.304,16.384-9.184,26.176-9.184c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64
+	c6.176,14.88,21.216,51.616,23.008,55.392c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744
+	c-3.776,4.352-7.36,7.68-11.136,12.352c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616
+	c28.576,25.44,51.744,33.568,60.032,37.024c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496
+	c5.12-7.232,11.584-8.128,18.368-5.568c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736
+    C411.2,329.152,411.2,344.032,405.024,361.504z" />
+            </g>
+        </symbol>
+        <symbol id="vk" viewBox="0 0 112.196 112.196">
+            <g>
+                <path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" />
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+	c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+	c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+	c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+	c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+	c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+	C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+	C480.224,136.96,497.728,118.496,512,97.248z" />
+            </g>
+        </symbol>
+    </svg>
+    <header class="header">
+        <div class="container">
+            <div class="header__descripton">
+                <img class="header__descripton_logo" src="img/Logo.png" alt="Логотип">
+                <span class="header__descripton_info"> Сайт по продаже техники</span>
+                <div class="header__dropdown">
+                    <ul class="header__dropdown_city">
+                        <li><a href="#">Город</a>
+                            <ul>
+                                <li><a href="#">Уфа</a></li>
+                                <li><a href="#">Чебоксары</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="header__phone">
+                    <a href="#" class="header__phone_number">+7 (980) 875-52-96</a>
+                    <div class="header__phone_timeWork"> пн—пт с 9:00 до 18:00 </div>
+                </div>
+                <div class="header__descripton_profile">
+                    <img alt="Поиск" class="header__descripton_search" src="img/icon_header/icon_search.png">
+                    <img alt="Личный кабинет" class="header__descripton_account" src="img/icon_header/icon_account.png">
+                    <img alt="Корзина" class="header__descripton_basket" src="img/icon_header/icon_basket.png">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="menu__inner">
+            <nav class="nav">
+                <div class="nav__link_catalog">
+                    <ul>
+                        <li><a class="nav__link-hover_catalog" href="#">Каталог</a>
+                            <ul>
+                                <li><a href="#">Бытовая техника</a></li>
+                                <li><a href="#">Стиральные машины</a></li>
+                                <li><a href="#">Утюги</a></li>
+                                <li><a href="#">Пылесосы</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Микроволновые печи</a></li>
+                                <li><a href="#"> Блендеры</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <a class="nav__link" href="#"> Акции </a>
+                <a class="nav__link" href="#"> Услуги </a>
+                <a class="nav__link" href="#"> Оплата </a>
+                <a class="nav__link" href="#"> Доставка </a>
+                <a class="nav__link" href="#"> Компания </a>
+                <a class="nav__link" href="#"> Контакты </a>
+
+            </nav>
+            <div class="burger">
+                <span class="burger__item"> Меню </span>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Slider -->
+
+    <div class="slider">
+        <div class="slider_img">
+            <img alt="Слайдер" class="slider__background" src="img/slider_img1.jpg" />
+            <div class="mainslider__nav slider-nav swiper-pagination-clickable swiper-pagination-bullets">
+                <button class="slider-nav__item active" aria-label="1"></button>
+                <button class="slider-nav__item" aria-label="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why us? Advantages -->
+
+    <div class="advantages__container">
+        <div class="container">
+            <div class="advantages_head head_block">
+                Почему мы?
+            </div>
+            <div class="advantages_features">
+                <div class="advantages_features__item">
+
+                    <div class="advantages_features__icon">
+                        <img class="" src="img/icon_avantages/icon_tracking.png" alt="Быстрая доставка"
+                            title="Быстрая доставка">
+                    </div>
+                    <div class="advantages_features__name">Быстрая доставка</div>
+                </div>
+                <div class="advantages_features__item">
+                    <div class="advantages_features__icon">
+                        <img class="" src="img/icon_avantages/icon_bullhorn.png" alt="Клиентский сервис"
+                            title="Клиентский сервис">
+                    </div>
+                    <div class="advantages_features__name">Клиентский сервис</div>
+                </div>
+                <div class="advantages_features__item">
+                    <div class="advantages_features__icon">
+                        <img class="" src="img/icon_avantages/icon_gift.png" alt="Бонусы за покупки"
+                            title="Бонусы за покупки">
+                    </div>
+                    <div class="advantages_features__name">Бонусы за покупки</div>
+                </div>
+                <div class="advantages_features__item">
+                    <div class="advantages_features__icon">
+                        <img class="" src="img/icon_avantages/icon_document.png" alt="Гарантия качества"
+                            title="Гарантия качества">
+                    </div>
+                    <div class="advantages_features__name">Гарантия качества</div>
+                </div>
+                <div class="advantages_features__item">
+                    <div class="advantages_features__icon">
+                        <img class="" src="img/icon_avantages/icon_wallet.png" alt="Доступные цены"
+                            title="Доступные цены">
+                    </div>
+                    <div class="advantages_features__name">Доступные цены</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  /.Why us? Advantages  -->
+
+
+    <!-- categories -->
+
+    <div class="container">
+        <div class="categories_head head_block">
+            Популярные категории
+        </div>
+        <div class="categories">
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_electronics.png" alt="Электроника" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Телефоны</div>
+                        <div class="categories__title_item"> Планшеты</div>
+                        <div class="categories__title_item"> Умные часы</div>
+                        <div class="categories__title_item"> GPS-Навигаторы</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_computers.png"
+                    alt="Компьютерная техника" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Настольные компьютеры</div>
+                        <div class="categories__title_item"> Ноутбуки</div>
+                        <div class="categories__title_item"> Мониторы</div>
+                        <div class="categories__title_item"> Принтеры и МФУ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_appliances.png" alt="Бытовая техника" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Стиральные машины</div>
+                        <div class="categories__title_item"> Пылесосы</div>
+                        <div class="categories__title_item"> Утюги</div>
+                        <div class="categories__title_item"> Холодильники</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_clothes.png" alt="Одежда и обувь" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Аксесуары к одежде</div>
+                        <div class="categories__title_item"> Женская одежда</div>
+                        <div class="categories__title_item"> Мужская одежда</div>
+                        <div class="categories__title_item"> Обувь</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_repair.png" alt="Инструменты" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Инструменты</div>
+                        <div class="categories__title_item"> Материалы</div>
+                        <div class="categories__title_item"> Краска для стен</div>
+                        <div class="categories__title_item"> Ламинат</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_autoProducts.png" alt="Автозапчасти" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Автомагнитолы</div>
+                        <div class="categories__title_item"> Автонавигаторы</div>
+                        <div class="categories__title_item"> Диски</div>
+                        <div class="categories__title_item"> Масло</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_children.png" alt="Детские Игрушки" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Игрушки</div>
+                        <div class="categories__title_item"> Спорт</div>
+                        <div class="categories__title_item"> Питание</div>
+                        <div class="categories__title_item"> Хобби</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories__item">
+                <img class="categories__photo" src="img/categories/categories_furniture.png" alt="мебель" />
+                <div class="categories__content">
+                    <div class="categories__title">
+                        <div class="categories__title_item"> Гостиная</div>
+                        <div class="categories__title_item"> Спальни</div>
+                        <div class="categories__title_item"> Детские</div>
+                        <div class="categories__title_item"> Мягкая мебель</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- /categories -->
+
+    <!--popular products -->
+    <div class="popularProducts">
+        <div class="container">
+            <div class="popularProducts_head head_block">
+                Популярные товары
+            </div>
+
+            <div class="popularProducts__inner">
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_computers.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        39 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Ноутбук Optilex 7050 MT i7-7700 3.6GHz 8Gb 256Gb SSD
+                            R7 450-4Gb DVD-RW Win10Pro </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_electronics.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        3 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> mi band 2 </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_children.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        999 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Медвеженок "Барни" </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-new_text">
+                        <small class="popularProducts__item-label-new_text" title="Новинка">
+                            Новинка
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_repair.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        99 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Краска для пола </a>
+                    </div>
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_appliances.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        39 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Телевизор Panasonic 45"</a>
+                    </div>
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_computers.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        139 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Настольный компьютер Xiaomi MT i7-7700 3.6GHz 8Gb
+                            256Gb SSD DVD-RW Win10Pro </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+
+                    <img class="popular__item_img" src="img/categories/categories_clothes.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        2 999 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Свитер "Пальма" </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item-new_text">
+                        <small class="popularProducts__item-label-new_text" title="Новинка">
+                            Новинка
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_autoProducts.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        1 739 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Двигатель для BMW </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+
+                    <img class="popular__item_img" src="img/categories/categories_clothes.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        2 999 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Свитер "Пальма" </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+
+                    <img class="popular__item_img" src="img/categories/categories_clothes.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        2 999 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Свитер "Пальма" </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_appliances.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        39 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+
+                            <a href="#" class="favorits__item">
+                                <svg class="favorits__icon">
+                                    <use xlink:href="#favorits"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="comparsion__item">
+                                <svg class="comparsion__icon">
+                                    <use xlink:href="#comparsion"></use>
+                                </svg>
+                            </a>
+
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Телевизор Panasonic 45"</a>
+                    </div>
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+
+                <div class="popularProducts__item">
+                    <span class="popularProducts__item_text">
+                        <small class="popularProducts__item-label_text" title=" Лидер продаж">
+                            Лидер продаж
+                        </small>
+                    </span>
+                    <span class="popularProducts__item-disc_text">
+                        <small class="popularProducts__item-label-disc_text" title="Распродажа">
+                            Распродажа
+                        </small>
+                    </span>
+                    <img class="popular__item_img" src="img/categories/categories_computers.png"
+                        alt="Картинка популярного товара">
+                    <div class="popularProducts__price">
+                        139 499 ₽/шт <span class="popularProducts__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popularProducts__name">
+                        <a class="popularProducts__name" href="#"> Настольный компьютер Xiaomi MT i7-7700 3.6GHz 8Gb
+                            256Gb SSD DVD-RW Win10Pro </a>
+                    </div>
+
+                    <div class="popularProducts__rating">
+                        <img class="popular__rating_img" alt="Популярный продукт" src="img/popular/popular_rating.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/popular products -->
+    <!-- viewed-->
+    <div class="container">
+        <div class="viewed__head head_block">
+            Просмотренные ранее товары
+        </div>
+        <div id="viewed" class="viewed">
+
+            <button class="viewed_arrow prev">⇦</button>
+            <div class="viewed__gallery">
+                <ul class="viewed_images">
+                    <li style="position: relative;">
+                        <img id="1" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+                    </li>
+                    <li style="position: relative;">
+                        <img id="2" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                    <li style="position: relative;">
+                        <img id="3" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                    <li style="position: relative;">
+                        <img id="4" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                    <li style="position: relative;">
+                        <img id="5" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                    <li style="position: relative;">
+                        <img id="6" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                    <li style="position: relative;">
+                        <img id="7" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+                        >
+                    </li>
+                    <li style="position: relative;">
+                        <img id="8" class="viewed__photo photo" src="img/categories/categories_appliances.png"
+                            alt=" Просмотренные товары">
+
+                    </li>
+                </ul>
+            </div>
+            <button class="viewed_arrow next">⇨</button>
+        </div>
+    </div>
+    <!-- /viewed -->
+    <!-- reviews -->
+    <div class="container">
+        <div class="reviews__head head_block">
+            Отзывы клиентов
+        </div>
+        <div class="reviews">
+
+            <div class="reviews__arrow_button">
+                <button class="reviews_arrow prev">⇦</button>
+                <button class="reviews_arrow next">⇨</button>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img alt="Фото профиля" class="reviews__img" src="img/reviews/ava1.png">
+                    <div class="reviews__author">
+                        Иванов Иван
+                    </div>
+                    <img alt="рейтинг продукта" class="reviews__rating_img" src="img/popular/popular_rating.png">
+    
+                </div>
+                <div class="reviews__content">
+
+                    <div class="reviews__text">
+                        Понятно и просто. Ребёнок разберётся.
+                        Готовый продукт в кружке, танцы с бубнами сведены к минимуму.
+                        Поговорил с людьми, которые занимаются ремонтом бытовой техники,
+                        сказали - бери, не думай, там нечему ломаться,
+                        если не вмешиваться и не тупить конкретно.
+                        <div class="reviews__text_date">
+                            16 октября 2850
+                        </div>
+                    </div>
+                   
+
+                </div>
+                <div class="reviews__product">
+
+                    <img class="reviews__item_img" src="img/categories/categories_computers.png"
+                        alt="Картинка популярного товара">
+                    <div class="reviews__name">
+                        <a class="reviews__name" href="#"> Настольный компьютер Xiaomi MT i7-7700 3.6GHz 8Gb
+                            256Gb SSD DVD-RW Win10Pro </a>
+                    </div>
+                    <div class="reviews-product__price">
+                        139 499 ₽/шт <span class="reviews__old-price"> 38 000 ₽/шт </span>
+                        <a href="#" class="favorits__item">
+                            <svg class="favorits__icon">
+                                <use xlink:href="#favorits"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="comparsion__item">
+                            <svg class="comparsion__icon">
+                                <use xlink:href="#comparsion"></use>
+                            </svg>
+                        </a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- / reviews -->
+
+    <!-- about the company -->
+    <div class="about-company">
+        <div class="container">
+            <div class="about-company__item">
+                <div class="about-company__photo">
+                    <img src="img/about_company/company.jpg" alt="Фотография компании" class="company__img">
+                </div>
+                <div class="about-company__content">
+                    <div class="about-company__head">
+                        О компании
+                    </div>
+                    <div class="about-company__text">
+                        Наша компания строит дома, коттеджи,
+                        бани и обустраивает придомовую территорию.
+                        К нам обращаются, чтобы заказать проект объекта под ключ или сэкономить
+                        на нём, выбрав готовый вариант с оригинальными доработками.
+                        Строим из древесины, кирпича, газобетона в Нижегородской
+                        области и ближайших регионах (в т. ч. на юге Ленинградской области).
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /about the company -->
+
+    <!-- footer container -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__menu footer__head ">
+                        Меню
+                    </h4>
+                    <div class="footer__content">
+                        <a class="footer__content_menu" href="#"> Каталог </a>
+                        <a class="footer__content_menu" href="#"> Акции </a>
+                        <a class="footer__content_menu" href="#"> Услуги </a>
+                        <a class="footer__content_menu" href="#"> Оплата </a>
+                        <a class="footer__content_menu" href="#"> Доставка </a>
+                        <a class="footer__content_menu" href="#"> Компания </a>
+                        <a class="footer__content_menu" href="#"> Контакты </a>
+                        <a class="footer__content_menu" href="#"> Наши магазины </a>
+                        <a class="footer__content_menu" href="#"> Популярные товары </a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__contacts footer__head">
+                        Наши данные для связи
+                    </h4>
+                    <div class="footer__content">
+                        <a class="footer__content_communication" href="#"> +7 (987) 000-00-00 </a>
+                        <a class="footer__contacts_email footer__content_communication" href="#"> tutPochta@mail.ru </a>
+
+                        <a class="footer__content_communication" href="#"> +7 (999) 000-00-00 </a>
+                    </div>
+                    <address class="footer__address">
+                        <div> Улица пушкина</div>
+                        <div> Дом колотушкина</div>
+                    </address>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__subscribe footer__head">
+                        Подпишись на нас</h4>
+                    <input class="footer__content_form-control" type="email" name="SENDER_SUBSCRIBE_EMAIL" value=""
+                        title="Введите ваш e-mail" placeholder="Введите ваш e-mail" required="">
+                    <button type="submit" class="footer__content_form-control-button">
+                        >
+                    </button>
+                    <!-- footer__content_social -->
+                    <div class="footer__content_social">
+                        <a href="#" class="social__item" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="blank">
+                            <svg class="social__icon_youtube">
+                                <use xlink:href="#youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="blank">
+                            <svg class="social__icon_whatsapp">
+                                <use xlink:href="#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="blank">
+                            <svg class="social__icon_twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+
+                        <!-- /footer__content_social -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- footer__Back-to-top -->
+            <div class="footer__back-to-top">
+                <a class="back-to-top is-shown" href="#">
+                    <span class="back-to-top__sr-only">К началу страницы</span>
+                    <svg class="back-to-top__icon-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M0 0h24v24H0z" fill="none">
+
+                        </path>
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /footer container -->
+
+    <!-- copyright -->
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="row">
+                <div class="row__text">
+                    © 2021 Все права защищены
+                </div>
+                <div class="row__text">
+                    <a href="#"> Политика конфиденциальности</a>
+                </div>
+                <div class="row__text">
+                    Разработал
+                    <a href="https://github.com/Artem9989/">Артем Мавлютов </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /copyright -->
+</body>
+
+</html>
